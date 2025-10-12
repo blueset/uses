@@ -1,0 +1,763 @@
+# yaml-language-server: $schema=schema.json
+
+sections:
+  - title: Code editing
+    color: text-blue-600 dark:text-blue-400
+    icon: iconify material-symbols--code
+    type: software
+    defaultLayout: grid
+    entries:
+      - title: Visual Studio Code
+        description: |
+          For most code editing and text editing tasks. It can handle almost everything that I need to do with code and other plain text files.
+
+          The multi-cursor support has been really helpful for repetitive edits. I also use it to do some temporary Python scripting with its built-in Jupyter notebook tabs.
+        icon: iconify-color devicon--vscode
+        links:
+          - title: Website
+            url: https://code.visualstudio.com/
+      - title: GitLens
+        description: |
+          An extension for Visual Studio Code that provides Git extensions. I use the “Copy remote link” the most when I need to share a link to a specific line in a file.
+        logo: /images/gitlens.png
+        links:
+          - title: Website
+            url: https://gitlens.amod.io/
+      - title: Visual Studio
+        description: |
+          Mostly for work. Currently (2025) I work on C++ and C♯ development in Visual Studio at work. We have all kinds of internal toolchains for building, debugging, and testing our products surrounding Visual Studio.
+
+          Other front-end development is still done using Visual Studio Code.
+        icon: iconify-color devicon--visualstudio
+        links:
+          - title: Website
+            url: https://visualstudio.microsoft.com/
+      - title: Android Studio
+        description: |
+          For my personal Android app development projects. It’s the obvious choice for Android development. JetBrains has been pretty solid with their IDEs.
+        logo: /images/android-studio-icon-2023.svg
+        links:
+          - title: Website
+            url: https://developer.android.com/studio
+          - title: Wikipedia
+            url: https://en.wikipedia.org/wiki/Android_Studio
+
+  - title: Large Language Models
+    color: text-orange-600 dark:text-orange-400
+    icon: iconify material-symbols--robot-2-outline
+    type: software
+    defaultLayout: grid
+    entries:
+      - title: ChatGPT
+        description: |
+          For more serious or in-depth questions.
+        icon: iconify simple-icons--openai
+        links:
+          - title: ChatGPT
+            url: https://chatgpt.com/
+        metadata:
+          - key: Subscription
+            value: Plus
+      - title: GitHub Copilot
+        description: |
+          Performance fluctuates throughout the time, it sometimes work better than its competitors, and sometimes worse.
+          At least I have the freedom to choose models, and it allows other VSCode plugins to access its LLM API.
+
+          Got an enterprise subscription as a perk from my employer. 
+        icon: iconify simple-icons--githubcopilot
+        links:
+          - title: GitHub Copilot
+            url: https://github.com/features/copilot
+        metadata:
+          - key: Subscription
+            value: Enterprise
+      - title: Gemini
+        description: |
+          Gemini is easy to access on the go on my Android phone, and has access to my Google Workspace data and Chrome.
+        icon: iconify-color material-icon-theme--gemini-ai
+        links:
+          - title: Gemini
+            url: https://gemini.google.com/
+        metadata:
+          - key: Subscription
+            value: Free
+      - title: Microsoft Copilot
+        description: |
+          For random questions, and stuff related to my browsing context on Edge.
+
+          Unfortunately, there isn’t any internal free or even discounted premium plan available.
+        logo: /images/mscopilot.svg
+        links:
+          - title: Microsoft Copilot
+            url: https://copilot.microsoft.com/
+        metadata:
+          - key: Subscription
+            value: Free
+      - title: Perplexity
+        description: |
+          For search that would benefit from social search results from Reddit and other forums.
+        icon: iconify simple-icons--perplexity
+        links:
+          - title: Perplexity
+            url: https://www.perplexity.ai/
+        metadata:
+          - key: Subscription
+            value: Free
+      - title: Grok
+        description: |
+          For searches that would benefit from Twitter (now X) search results.
+        logo: /images/grok.svg
+        links:
+          - title: Grok
+            url: https://grok.com/
+        metadata:
+          - key: Subscription
+            value: Free
+
+  - title: PC & Peripherals
+    color: text-purple-600 dark:text-purple-400
+    icon: iconify lucide--laptop
+    type: hardware
+    defaultLayout: masonry
+    entries:
+      - title: Desktop (2024)
+        description: |
+          My first desktop after years of using laptops. 
+          I finally made up my mind as I won’t see myself moving to another country for the forseeable future, so I could afford the bulkier form factor.
+
+          This PR spec is built with helps from fellows in [/r/BuildAPC](https://www.reddit.com/r/BuildAPC),
+          [PCPartPicker Forum](https://pcpartpicker.com/forums/), and [LTT Forums](https://linustechtips.com/main/forum/6-build-pc/).
+        photo: /images/desktop2024.webp
+        links:
+          - title: PCPartPicker
+            url: https://pcpartpicker.com/list/wBzscx
+        metadata:
+          - key: CPU
+            value: AMD Ryzen 9 9950X 4.3 GHz 16-Core Processor
+          - key: CPU Cooler
+            value: Thermalright Frozen Prism 70.4 CFM Liquid CPU Cooler
+          - key: Motherboard
+            value: MSI MAG X870 TOMAHAWK WIFI ATX AM5
+          - key: Memory
+            value: Corsair Vengeance 96 GB (2 x 48 GB) DDR5-6400 CL32
+          - key: Storage
+            value: TEAMGROUP MP44 4 TB M.2-2280 PCIe 4.0 x4 NVMe SSD
+          - key: Video Card
+            value: Gigabyte GAMING OC GeForce RTX 4090 24 GB
+          - key: Case
+            value: Fractal Design Meshify 2 ATX Mid Tower
+          - key: Power Supply
+            value: Corsair RM1000e (2023) 1000 W 80+ Gold Fully Modular
+          - key: Status
+            value: Primary device
+      - title: MacBook Pro 14-inch, Nov 2024
+        description: |
+          My primary laptop for work, following a 4-year refresh cycle per company policy.
+          It is paid by and owned by my employer.
+        photo: /images/macbook2024.jpg
+        metadata:
+          - key: SOC
+            value: Apple M4 Pro, 14-Core CPU, 20-Core GPU
+          - key: Memory
+            value: 24 GB Unified Memory
+          - key: Storage
+            value: 1 TB SSD
+          - key: Owner
+            value: Employer
+          - key: Status
+            value: In use
+      - title: MacBook Pro 15-inch, Mid 2019
+        description: |
+          My most recent laptop. Bought during graduation for the student discount and GST refund.
+          It was the last model of the aluminum chassis that was infamous for its bad heat dissipation.
+          It was also the last model that shipped with a touch bar.
+
+          It is now repurposed as a home server, running some more demanding workloads.
+        photo: /images/macbook2019.webp
+        metadata:
+          - key: CPU
+            value: Intel Core i9 (I9-9980HK)
+          - key: GPU
+            value: Radeon Pro Vega 20
+          - key: Memory
+            value: 32 GB
+          - key: Storage
+            value: 1 TB SSD
+          - key: Status
+            value: Home server
+      - title: ThinkPad X1 Carbon
+        description: |
+          My first work laptop, not very powerful to begin with, and even worse today.
+          It is now a backup device.
+        photo: /images/thinkpadx1.avif
+        hidden: true
+        metadata:
+          - key: Owner
+            value: Employer
+          - key: Status
+            value: Standby
+      - title: MacBook Pro Retina, 13-inch, Mid 2014
+        description: |
+          My first MacBook, gifted to my family.
+        hidden: true
+        photo: /images/macbook2014.webp
+        metadata:
+          - key: Status
+            value: Gifted out
+      - title: ThinkPad laptop
+        description: |
+          It was one of the new models released soon after Lenovo acquired ThinkPad from IBM.
+          It was shipped with Windows Vista.
+
+          This is too old for me to remember the details.
+        hidden: true
+        logo: /images/thinkpad.svg
+        metadata:
+          - key: Status
+            value: Recycled
+      - title: Lenovo laptop
+        description: |
+          This is even older for me to remember the details.
+        hidden: true
+        logo: /images/lenovo.svg
+        metadata:
+          - key: Status
+            value: Recycled
+      - title: Dell S2722QC
+        description: |
+          A 4K monitor with HDMI, USB Type-C, DisplayPort, and built-in speaker. It is connected to my desktop, laptop, and other stuff.
+        photo: /images/s2722qc.png
+        links:
+          - title: Dell
+            url: https://www.dell.com/en-us/shop/dell-27-4k-uhd-usb-c-monitor-s2722qc/apd/210-bbqt/monitors-monitor-accessories
+          - title: DisplaySpecifications
+            url: https://www.displayspecifications.com/en/model/7c3d2823
+        metadata:
+          - key: Status
+            value: In use
+      - title: Keychron K8 Pro
+        photo: /images/keychronk8pro.png
+        description: |
+          It is installed with [DSA Granite](https://spkeyboards.com/products/dsa-granite) keycaps set with Colemak layout.
+          This one has both QMK and VIA support, and also connects through Bluetooth.
+
+          Layout switching is done through VIA, so I don’t have to juggle with the firmware source.
+        links:
+          - title: Keychron
+            url: https://www.keychron.com/products/keychron-k8-pro-qmk-via-wireless-mechanical-keyboard
+        metadata:
+          - key: Backlight
+            value: RGB
+          - key: Switch
+            value: Gateron G Pro Red
+          - key: Keycaps
+            value: Signature Plastics DSA Granite
+          - key: Status
+            value: In use
+      - title: Drop CTRL v1
+        description: |
+          It is installed with a [MT3 Susuwatari](https://drop.com/buy/drop-matt3o-mt3-susuwatari-custom-keycap-set) keycap set with Colemak layout.
+          My first keyboard with QMK support. I compiled its firmware with added QWERTY/Colemak switch and Win/Alt–Cmd/Opt key swaps.
+        photo: /images/dropctrl.jpg
+        links:
+          - title: Drop
+            url: https://drop.com/buy/drop-ctrl-mechanical-keyboard
+        metadata:
+          - key: Color
+            value: Black
+          - key: Switch
+            value: Cherry MX Brown
+          - key: Keycaps
+            value: Drop + Matt3o MT3 Susuwatari
+          - key: Status
+            value: In use
+      - title: Vortex POK3R
+        description: |
+          My first mechanical keyboard. 60% layout is great, but I wanted more firmware customizations.
+          It is now sold through an online marketplace.
+        photo: /images/pok3r.webp
+        hidden: true
+        metadata:
+          - key: Switch
+            value: Cherry MX Blue
+          - key: Status
+            value: Sold
+      - title: Logitech MX Master 4 Mouse
+        description: |
+          My primary mouse. Bought to replace my old MX Master 3 mouse whose silicon side grips were getting loose and worn over time.
+        photo: /images/mxmaster4mouse.webp
+        links:
+          - title: Logitech
+            url: https://www.logitech.com/en-us/shop/p/mx-master-4
+        metadata:
+          - key: Status
+            value: In use
+      - title: Logitech MX Master 3S Mouse
+        description: |
+          MX Master 3 is really good, so I bought another one.
+        photo: /images/mxmaster3smouse.webp
+        links:
+          - title: Logitech
+            url: https://www.logitech.com/en-us/shop/p/mx-master-3s
+        metadata:
+          - key: Status
+            value: In use
+      - title: Logitech MX Master 3 Mouse
+        description: |
+          There was a time I spotted a MX Master 2 mouse in a library, probably left by someone.
+          I tried it out on how it felt, and it was really awesome. I also liked how all the buttons and scroll wheels were placed.
+          So I decided to buy a MX Master 3, which was the latest model available at that time.
+        photo: /images/mxmaster3mouse.jpg
+        hidden: true
+        metadata:
+          - key: Status
+            value: Retired
+
+  - title: Phones
+    color: text-sky-700 dark:text-sky-400
+    icon: iconify lucide--smartphone
+    type: hardware
+    defaultLayout: list
+    entries:
+      - title: Pixel 10 Pro XL
+        description: |
+          My second time staying on the 4-year update cycle, and again I bought it through the presale on the release date.
+
+          This is my first phone that doesn’t have a physical SIM tray. At least as of 2025, this is also a US thing.
+        photo: /images/pixel10proxl.webp
+        links:
+          - title: GSMArena
+            url: https://www.gsmarena.com/google_pixel_10_pro_xl_5g-13988.php
+        metadata:
+          - key: Color
+            value: Obsidian
+          - key: Storage
+            value: 256 GB
+          - key: Status
+            value: Primary device
+      - title: Pixel 6 Pro
+        photo: /images/pixel6pro.webp
+        description: |
+          My first time staying on a proper 4-year update cycle. I bought it through the presale on the release date.
+          I had been planning to upgrade it for quite a while since my 2 XL battery has been degrading rather fast.
+
+          I bought this in Canada, and it wasn’t accepted well with some carriers in the US when I moved over. 
+          I guess that’s has to be just a US thing. I have never encountered such issue in other countries.
+        links:
+          - title: GSMArena
+            url: https://www.gsmarena.com/google_pixel_6_pro-10918.php
+        metadata:
+          - key: Color
+            value: Stormy Black
+          - key: Storage
+            value: 256 GB
+          - key: Status
+            value: Secondary backup
+      - title: Pixel 3a
+        photo: /images/pixel3a.jpg
+        description: |
+          The first phone I bought solely as a backup phone in case my primary phone fails, which fortunately never happened after I bought it.
+
+          I got it before I graduated to grab the last chance to have both a student discount and GST return.
+        links:
+          - title: GSMArena
+            url: https://www.gsmarena.com/google_pixel_3a-9408.php
+        metadata:
+          - key: Color
+            value: Just Black
+          - key: Storage
+            value: 64 GB
+          - key: Status
+            value: Tertiary backup
+      - title: Pixel 2 XL
+        description: |
+          I got this phone about a month before Google announced the Pixel 3 series,
+          due to my last primary phone (Nexus 6P) suddenly dying, and I needed to have an Android phone immediately for a class project.
+
+          I would definitely wait for the next generation if I could. It was pretty sad to see the phone you bought dropped in price in just a month.
+        photo: /images/pixel2xl.jpg
+        hidden: true
+        links:
+          - title: GSMArena
+            url: https://www.gsmarena.com/google_pixel_2_xl-8720.php
+        metadata:
+          - key: Color
+            value: Just Black
+          - key: Storage
+            value: 128 GB
+          - key: Status
+            value: Traded in
+      - title: Nexus 6P
+        description: |
+          My first “Google” phone, although it still carries the Huawei branding.
+          Despite being Huawei, it is not officially sold in China due to its Google nature.
+
+          Motherboard was dead suddenly, right before Google launches Pixel 3 series, 
+          and I need an Android phone immediately for my class project.
+
+          There might be another phone between the Nexus 6P and the Milestone, but I can’t remember.
+        photo: /images/nexus6p.webp
+        hidden: true
+        links:
+          - title: GSMArena
+            url: https://www.gsmarena.com/huawei_nexus_6p-7588.php
+        metadata:
+          - key: Color
+            value: Graphite
+          - key: Storage
+            value: 64 GB
+          - key: Status
+            value: Recycled, motherboard issues
+      - title: Samsung Galaxy Note 3
+        description: |
+          It was my first phone with a stylus, and actually the last one.
+
+          It was bought from a local mobile retailer under a now rather suspecious contract where we paid the retailer a considerable amount of money
+          to get the device “for free” with their promise to return the money after 2 years.
+          However, the retailer went out of business before the 2 years were up, and we never got the money back.
+
+          Surprisingly the phone has lasted much longer than expected. It was mostly usable throughout the time with its battery replaced twice.
+          I replaced it with a Nexus 6P when its performance started to fall behind.
+        photo: /images/galaxynote3.png
+        hidden: true
+        links:
+          - title: GSMArena
+            url: https://www.gsmarena.com/samsung_galaxy_note_3-5665.php
+        metadata:
+          - key: Color
+            value: Black
+          - key: Status
+            value: Recycled
+      - title: Motorola Milestone
+        description: |
+          My first smartphone, also my first and last phone that had a physical QWERTY keyboard.
+
+          It was too far ago for me to remember where it ended up with.
+        photo: /images/milestone.jpg
+        hidden: true
+        links:
+          - title: GSMArena
+            url: https://www.gsmarena.com/motorola_milestone-3001.php
+        metadata:
+          - key: Status
+            value: Unknown
+
+  - title: Wearables
+    color: text-teal-600 dark:text-teal-400
+    icon: iconify lucide--watch
+    type: hardware
+    defaultLayout: list
+    entries:
+      - title: Pixel Watch 3
+        description: |
+          I traded in my old Pixel Watch 2 to get this new one, 
+          mainly because Pixel Watch 2 only has a 41mm option, and I feel like it’s too small.
+
+          I wrote [Simple Memo](https://1a23.com/works/open-source/simple-memo/) for Android Wear OS.
+        photo: /images/pixelwatch3.png
+        links:
+          - title: GSMArena
+            url: https://www.gsmarena.com/google_pixel_watch_3-13253.php
+        metadata:
+          - key: Color
+            value: Matte Black
+          - key: Size
+            value: 45mm
+          - key: Variant
+            value: Wi-Fi
+          - key: Status
+            value: Primary device
+      - title: Pixel Watch 2
+        description: |
+          Bought this watch using the remaining wellbeing budgets that will expire if I don’t use it.
+        hidden: true
+        photo: /images/pixelwatch2.jpg
+        links:
+          - title: GSMArena
+            url: https://www.gsmarena.com/google_pixel_watch_2-12547.php
+        metadata:
+          - key: Color
+            value: Matte Black
+          - key: Variant
+            value: Wi-Fi
+          - key: Status
+            value: Traded in
+      - title: Fitbit Versa
+        description: |
+          A nice watch in general, solid battery life. Returned due to bad connectivity with smartphone.
+
+          I wrote [Fitbit Schedule](https://github.com/blueset/fitbit-schedule) for Fitbit OS 2.
+        photo: /images/fitbitversa.webp
+        hidden: true
+        metadata:
+          - key: Status
+            value: Refunded
+      - title: Galaxy Watch
+        description: |
+          My first smart watch. Solid in battery life and features. I really liked the rotating bezel.
+          Contactless payment is locked to the purchasing country, but somewhat hackable.
+          This was also purchased when I graduated to with GST return.
+
+          I should have traded it in before it was too late.
+        photo: /images/galaxywatch.jpg
+        hidden: true
+        links:
+          - title: Wikipedia
+            url: https://en.wikipedia.org/wiki/Samsung_Galaxy_Watch
+        metadata:
+          - key: Size
+            value: 46mm
+          - key: Color
+            value: Silver
+          - key: Variant
+            value: Bluetooth
+          - key: Status
+            value: Recycled
+      - title: Vivoactive 3
+        description: |
+          A next fitness tracker that replaced my lost Mi Band 2. It felt more like a smart watch
+          than a fitness tracker, despite no app support. Unfortunately, there was no CJK support in
+          music control and notifications in the global edition.
+        photo: /images/vivoactive3.jpg
+        hidden: true
+        links:
+          - title: Garmin
+            url: https://www.garmin.com/en-US/p/571520/
+        metadata:
+          - key: Variant
+            value: Standard
+          - key: Color
+            value: Slate
+          - key: Status
+            value: Traded in
+      - title: Mi Band 2
+        description: |
+          My first fitness tracker. Feature was okay for a fitness tracker, but the strap
+          was not very secure. It was lost unknowingly.
+        photo: /images/miband2.jpg
+        hidden: true
+        metadata:
+          - key: Status
+            value: Lost
+      - title: Pixel Buds Pro 2
+        description: |
+          My primary earbuds, bought for the wireless charging upgrade, and loved with it for its active noise cancellation.
+        photo: /images/pixelbudspro2.png
+        links:
+          - title: Google
+            url: https://store.google.com/product/pixel_buds_pro_2
+        metadata:
+          - key: Color
+            value: Hazel
+          - key: Status
+            value: In use
+      - title: Pixel Buds A-Series
+        description: |
+          Got this for free with my Pixel 6 Pro pre-order. It fits my ear well and hardly falls out when I move around.
+        photo: /images/pixelbudsaseries.png
+        hidden: true
+        metadata:
+          - key: Color
+            value: Dark Olive
+          - key: Status
+            value: Standby
+
+  - title: Gadgets
+    color: text-lime-600 dark:text-lime-400
+    icon: iconify lucide--tablet-smartphone
+    type: hardware
+    defaultLayout: list
+    entries:
+      - title: TRMNL OG (Clear)
+        description: |
+          An e-ink dashboard refreshes every 15 minutes (or longer), renders contents from TRMNL’s own servers.
+
+          I wrote [some custom “recipes”](https://github.com/blueset/trmnl-recipes) to show all kinds of random stuff.
+        photo: /images/trmnlog.jpg
+        links:
+          - title: TRMNL
+            url: https://shop.usetrmnl.com/products/trmnl
+        metadata:
+          - key: Color
+            value: Clear
+          - key: Status
+            value: In use
+
+      - title: iPad Pro (12.9-inch) (3rd generation)
+        description: |
+          My first (and so far only) iOS device, also my first tablet.
+          Bought after graduation for the student discount and GST refund.
+          Still functions well for my needs. I also bought an Apple Pencil (2nd generation) with it.
+
+          This is also my digitizer every time I need to draw something digitally.
+
+          Missed the chance to jailbreak, now waiting for a new jailbreak for my current iPadOS version.
+        photo: /images/ipadpro12.93g.jpg
+        links:
+          - title: GSMArena
+            url: https://www.gsmarena.com/apple_ipad_pro_12_9_(2018)-9387.php
+        metadata:
+          - key: Color
+            value: Space Gray
+          - key: Storage
+            value: 256 GB
+          - key: Variant
+            value: Wi-Fi
+          - key: Status
+            value: In use
+      - title: Flipper Zero
+        description: |
+          Something I bought just for the popularity. I ended up using it as a backup for my infrared remote and NFC entry stuff.
+          
+        photo: /images/flipperzero.png
+        links:
+          - title: Flipper Zero
+            url: https://flipperzero.one/
+        metadata:
+          - key: Status
+            value: In use
+      - title: Raspberry Pi 5
+        description: |
+          My current home server. Replaced my old Raspberry Pi 3 Model B+. It is now running a few light weight servers and controlled by a smart power plug.
+        photo: /images/raspberrypi5.webp
+        links:
+          - title: Raspberry Pi
+            url: https://www.raspberrypi.com/products/raspberry-pi-5/
+        metadata:
+          - key: RAM
+            value: 8 GB
+          - key: Status
+            value: In use
+      - title: Google Home Mini (1st generation)
+        description: |
+          I got this for free from a Spotify promotion. Now it’s sitting on my desk answering basic questions about weather and setting timers.
+        photo: /images/googlehomemini.webp
+        metadata:
+          - key: Color
+            value: Charcoal
+          - key: Status
+            value: In use
+      - title: Raspberry Pi 3 Model B+
+        description: |
+          Bought for home server use. Failed suddenly one day and refused to boot thereafter.
+          It is now recycled and replaced by a new Raspberry Pi.
+        photo: /images/raspberrypi3b.jpg
+        hidden: true
+        links:
+          - title: Raspberry Pi
+            url: https://www.raspberrypi.com/products/raspberry-pi-3-model-b-plus/
+        metadata:
+          - key: Status
+            value: Failed, recycled
+
+  # - title: Typefaces
+  #   color: text-amber-600 dark:text-amber-400
+  #   icon: iconify fluent--text-font-24-regular
+  #   type: software
+  #   defaultLayout: grid
+  #   entries:
+  #     - title: JetBrains Mono
+  #       description: A typeface for developers that is free and open-source.
+  #       icon: iconify simple-icons--jetbrains
+  #       links:
+  #         - title: Website
+  #           url: https://www.jetbrains.com/lp/mono/
+
+  - title: Mobile apps
+    color: text-green-600 dark:text-green-400
+    icon: iconify fluent--app-folder-24-regular
+    type: software
+    defaultLayout: grid
+    entries:
+      - title: GymRun
+        description: |
+          A workout tracker. Supports custom workouts and cloud backup with Google Drive, Dropbox, and OneDrive.
+
+          I built [GymRun poster](https://github.com/blueset/gymrun) that sends a Mastodon/Misskey post when it sees a new backup on OneDrive.
+        logo: /images/gymrun.png
+        links:
+          - title: Website
+            url: https://www.gymrun.app/
+          - title: Google Play
+            url: https://play.google.com/store/apps/details?id=com.imperon.android.gymapp
+
+  - title: Productivity
+    color: text-emerald-600 dark:text-emerald-400
+    icon: iconify lucide--check-square
+    type: software
+    defaultLayout: grid
+    entries:
+      - title: Notion
+        description: |
+          For organizing larger personal projects that needs more structured planning and database-like content management.
+
+          I started using Notion rather early and applied for their student discount when I was in university.
+        icon: iconify simple-icons--notion
+        links:
+          - title: Website
+            url: https://www.notion.so/
+          - title: Wikipedia
+            url: https://en.wikipedia.org/wiki/Notion_(productivity_software)
+      - title: Google Keep
+        description: |
+          For quick note-taking and checklists. I sometimes use Google Assistant (now Gemini) to add items to my shopping lists.
+
+          It also serves as a simple text editor and sketch pad for all kinds of random things.
+        icon: iconify-color logos--google-keep
+        links:
+          - title: Website
+            url: https://keep.google.com/
+          - title: Wikipedia
+            url: https://en.wikipedia.org/wiki/Google_Keep
+      - title: OneNote
+        description: |
+          For work-related note-taking. Its notebook-section-page structure is quite useful for organizing notes. Also, our company is all in Microsoft 365. 
+        logo: /images/microsoft-onenote-icon.svg
+        links:
+          - title: Website
+            url: https://www.onenote.com/
+          - title: Wikipedia
+            url: https://en.wikipedia.org/wiki/Microsoft_OneNote
+      - title: Microsoft Loop
+        description: For work-related collaborations. Mainly with Loop components embedded in Outlook emails and Teams messages.
+        logo: /images/microsoft-loop-logo.svg
+        links:
+          - title: Website
+            url: https://loop.microsoft.com/
+          - title: Wikipedia
+            url: https://en.wikipedia.org/wiki/Microsoft_Loop
+      - title: Microsoft To Do
+        description: For work-related task management. Usually used interchangably with OneNote checklists.
+        logo: /images/microsoft-to-do-icon.svg
+        links:
+          - title: Website
+            url: https://to-do.microsoft.com/
+          - title: Wikipedia
+            url: https://en.wikipedia.org/wiki/Microsoft_To_Do
+      - title: Microsoft 365
+        description: It’s what my company uses. Simple as that.
+        logo: /images/microsoft-365-2022.svg
+        links:
+          - title: Website
+            url: https://www.microsoft.com/microsoft-365
+          - title: Wikipedia
+            url: https://en.wikipedia.org/wiki/Microsoft_365
+
+  - title: Development Tools
+    color: text-indigo-600 dark:text-indigo-400
+    icon: iconify lucide--wrench
+    type: software
+    defaultLayout: grid
+    entries:
+      - title: CyberChef
+        description: |
+          Handy tool for all kinds of data transformation and analysis, accessible directly in the browser.
+
+          Open source under the Apache License 2.0, maintained by [<abbr title="Government Communications Headquarters">GCHQ</abbr>](https://www.gchq.gov.uk/).
+        icon: iconify lucide--chef-hat
+        links:
+          - title: Website
+            url: https://gchq.github.io/CyberChef/
+          - title: GitHub
+            url: https://github.com/gchq/CyberChef
+

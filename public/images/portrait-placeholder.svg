@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="800" viewBox="0 0 600 800" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Portrait placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F3F4F6"/>
+      <stop offset="100%" stop-color="#E5E7EB"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#9CA3AF"/>
+      <stop offset="100%" stop-color="#6B7280"/>
+    </linearGradient>
+    <clipPath id="rounded">
+      <rect x="0" y="0" width="600" height="800" rx="24" ry="24"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#rounded)">
+    <rect x="0" y="0" width="600" height="800" fill="url(#bg)"/>
+    <!-- Top accent -->
+    <rect x="-100" y="-60" width="800" height="240" fill="url(#accent)" opacity="0.15"/>
+    <!-- Bottom accent -->
+    <rect x="-120" y="640" width="840" height="240" fill="url(#accent)" opacity="0.12"/>
+
+    <!-- Person silhouette -->
+    <circle cx="300" cy="300" r="90" fill="#D1D5DB"/>
+    <rect x="150" y="420" width="300" height="220" rx="110" fill="#D1D5DB"/>
+
+    <!-- Frame border -->
+    <rect x="1.5" y="1.5" width="597" height="797" rx="22.5" ry="22.5" stroke="#CBD5E1" stroke-width="3" fill="none"/>
+
+    <!-- Label -->
+    <g aria-hidden="true">
+      <rect x="200" y="710" width="200" height="36" rx="18" fill="#111827" opacity="0.07"/>
+      <text x="300" y="735" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="14" fill="#6B7280">Portrait Placeholder</text>
+    </g>
+  </g>
+</svg>
