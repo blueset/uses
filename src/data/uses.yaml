@@ -74,13 +74,17 @@ sections:
       - title: Gemini
         description: |
           Gemini is easy to access on the go on my Android phone, and has access to my Google Workspace data and Chrome.
+
+          I’m starting to use it more with the 1-year Pro trial came from my Pixel 10. 
+          But unfortrunately I can’t add it to my main account which is a Google Workspace Legacy Free account, 
+          so I had to switch accounts every now and then to access my personal data.
         icon: iconify-color material-icon-theme--gemini-ai
         links:
           - title: Gemini
             url: https://gemini.google.com/
         metadata:
           - key: Subscription
-            value: Free
+            value: Pro (1-year trial)
       - title: Microsoft Copilot
         description: |
           For random questions, and stuff related to my browsing context on Edge.
