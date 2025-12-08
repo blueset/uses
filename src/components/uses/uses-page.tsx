@@ -78,7 +78,7 @@ export async function UsesPage({ config }: UsesPageProps) {
           {/* Hero section: single descriptive text row */}
           <div className="py-10 sm:py-15">
             <p className="max-w-[40ch] md:font-light text-muted-foreground text-lg sm:text-xl md:text-4xl lg:text-5xl text-balance leading-tight tracking-tight">
-              Landing page description lorem ipsum dolor sit amet consectetur.
+              What I use to code, create, and productivity.
             </p>
           </div>
         </div>
