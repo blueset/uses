@@ -26,10 +26,11 @@ export function EntryListItem({
     if (entry.logo) {
       return (
         <Image
-          src={`./${entry.logo}`}
+          src={entry.logo.src}
           alt={entry.title}
-          width={entry.logoMetadata?.width}
-          height={entry.logoMetadata?.height}
+          width={entry.logo.width}
+          height={entry.logo.height}
+          blurDataURL={entry.logo.blurDataURL}
           className="flex-shrink-0 w-auto h-5 object-contain"
         />
       );

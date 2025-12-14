@@ -19,7 +19,7 @@ sections:
       - title: GitLens
         description: |
           An extension for Visual Studio Code that provides Git extensions. I use the “Copy remote link” the most when I need to share a link to a specific line in a file.
-        logo: /images/gitlens.png
+        logo: images/gitlens.png
         links:
           - title: Website
             url: https://gitlens.amod.io/
@@ -35,7 +35,7 @@ sections:
       - title: Android Studio
         description: |
           For my personal Android app development projects. It’s the obvious choice for Android development. JetBrains has been pretty solid with their IDEs.
-        logo: /images/android-studio-icon-2023.svg
+        logo: images/android-studio-icon-2023.svg
         links:
           - title: Website
             url: https://developer.android.com/studio
@@ -90,7 +90,7 @@ sections:
           For random questions, and stuff related to my browsing context on Edge.
 
           Unfortunately, there isn’t any internal free or even discounted premium plan available.
-        logo: /images/mscopilot.svg
+        logo: images/mscopilot.svg
         links:
           - title: Microsoft Copilot
             url: https://copilot.microsoft.com/
@@ -110,7 +110,7 @@ sections:
       - title: Grok
         description: |
           For searches that would benefit from Twitter (now X) search results.
-        logo: /images/grok.svg
+        logo: images/grok.svg
         links:
           - title: Grok
             url: https://grok.com/
@@ -131,7 +131,7 @@ sections:
 
           This PR spec is built with helps from fellows in [/r/BuildAPC](https://www.reddit.com/r/BuildAPC),
           [PCPartPicker Forum](https://pcpartpicker.com/forums/), and [LTT Forums](https://linustechtips.com/main/forum/6-build-pc/).
-        photo: /images/desktop2024.webp
+        photo: images/desktop2024.webp
         links:
           - title: PCPartPicker
             url: https://pcpartpicker.com/list/wBzscx
@@ -158,7 +158,7 @@ sections:
         description: |
           My primary laptop for work, following a 4-year refresh cycle per company policy.
           It is paid by and owned by my employer.
-        photo: /images/macbook2024.jpg
+        photo: images/macbook2024.jpg
         metadata:
           - key: SOC
             value: Apple M4 Pro, 14-Core CPU, 20-Core GPU
@@ -177,7 +177,7 @@ sections:
           It was also the last model that shipped with a touch bar.
 
           It is now repurposed as a home server, running some more demanding workloads.
-        photo: /images/macbook2019.webp
+        photo: images/macbook2019.webp
         metadata:
           - key: CPU
             value: Intel Core i9 (I9-9980HK)
@@ -193,7 +193,7 @@ sections:
         description: |
           My first work laptop, not very powerful to begin with, and even worse today.
           It is now a backup device.
-        photo: /images/thinkpadx1.avif
+        photo: images/thinkpadx1.avif
         hidden: true
         metadata:
           - key: Owner
@@ -204,7 +204,7 @@ sections:
         description: |
           My first MacBook, gifted to my family.
         hidden: true
-        photo: /images/macbook2014.webp
+        photo: images/macbook2014.webp
         metadata:
           - key: Status
             value: Gifted out
@@ -215,7 +215,7 @@ sections:
 
           This is too old for me to remember the details.
         hidden: true
-        logo: /images/thinkpad.svg
+        logo: images/thinkpad.svg
         metadata:
           - key: Status
             value: Recycled
@@ -223,14 +223,14 @@ sections:
         description: |
           This is even older for me to remember the details.
         hidden: true
-        logo: /images/lenovo.svg
+        logo: images/lenovo.svg
         metadata:
           - key: Status
             value: Recycled
       - title: Dell S2722QC
         description: |
           A 4K monitor with HDMI, USB Type-C, DisplayPort, and built-in speaker. It is connected to my desktop, laptop, and other stuff.
-        photo: /images/s2722qc.png
+        photo: images/s2722qc.png
         links:
           - title: Dell
             url: https://www.dell.com/en-us/shop/dell-27-4k-uhd-usb-c-monitor-s2722qc/apd/210-bbqt/monitors-monitor-accessories
@@ -240,7 +240,7 @@ sections:
           - key: Status
             value: In use
       - title: Keychron K8 Pro
-        photo: /images/keychronk8pro.png
+        photo: images/keychronk8pro.png
         description: |
           It is installed with [DSA Granite](https://spkeyboards.com/products/dsa-granite) keycaps set with Colemak layout.
           This one has both QMK and VIA support, and also connects through Bluetooth.
@@ -262,7 +262,7 @@ sections:
         description: |
           It is installed with a [MT3 Susuwatari](https://drop.com/buy/drop-matt3o-mt3-susuwatari-custom-keycap-set) keycap set with Colemak layout.
           My first keyboard with QMK support. I compiled its firmware with added QWERTY/Colemak switch and Win/Alt–Cmd/Opt key swaps.
-        photo: /images/dropctrl.jpg
+        photo: images/dropctrl.jpg
         links:
           - title: Drop
             url: https://drop.com/buy/drop-ctrl-mechanical-keyboard
@@ -279,7 +279,7 @@ sections:
         description: |
           My first mechanical keyboard. 60% layout is great, but I wanted more firmware customizations.
           It is now sold through an online marketplace.
-        photo: /images/pok3r.webp
+        photo: images/pok3r.webp
         hidden: true
         metadata:
           - key: Switch
@@ -289,7 +289,7 @@ sections:
       - title: Logitech MX Master 4 Mouse
         description: |
           My primary mouse. Bought to replace my old MX Master 3 mouse whose silicon side grips were getting loose and worn over time.
-        photo: /images/mxmaster4mouse.webp
+        photo: images/mxmaster4mouse.webp
         links:
           - title: Logitech
             url: https://www.logitech.com/en-us/shop/p/mx-master-4
@@ -299,7 +299,7 @@ sections:
       - title: Logitech MX Master 3S Mouse
         description: |
           MX Master 3 is really good, so I bought another one.
-        photo: /images/mxmaster3smouse.webp
+        photo: images/mxmaster3smouse.webp
         links:
           - title: Logitech
             url: https://www.logitech.com/en-us/shop/p/mx-master-3s
@@ -311,7 +311,7 @@ sections:
           There was a time I spotted a MX Master 2 mouse in a library, probably left by someone.
           I tried it out on how it felt, and it was really awesome. I also liked how all the buttons and scroll wheels were placed.
           So I decided to buy a MX Master 3, which was the latest model available at that time.
-        photo: /images/mxmaster3mouse.jpg
+        photo: images/mxmaster3mouse.jpg
         hidden: true
         metadata:
           - key: Status
@@ -328,7 +328,7 @@ sections:
           My second time staying on the 4-year update cycle, and again I bought it through the presale on the release date.
 
           This is my first phone that doesn’t have a physical SIM tray. At least as of 2025, this is also a US thing.
-        photo: /images/pixel10proxl.webp
+        photo: images/pixel10proxl.webp
         links:
           - title: GSMArena
             url: https://www.gsmarena.com/google_pixel_10_pro_xl_5g-13988.php
@@ -340,7 +340,7 @@ sections:
           - key: Status
             value: Primary device
       - title: Pixel 6 Pro
-        photo: /images/pixel6pro.webp
+        photo: images/pixel6pro.webp
         description: |
           My first time staying on a proper 4-year update cycle. I bought it through the presale on the release date.
           I had been planning to upgrade it for quite a while since my 2 XL battery has been degrading rather fast.
@@ -358,7 +358,7 @@ sections:
           - key: Status
             value: Secondary backup
       - title: Pixel 3a
-        photo: /images/pixel3a.jpg
+        photo: images/pixel3a.jpg
         description: |
           The first phone I bought solely as a backup phone in case my primary phone fails, which fortunately never happened after I bought it.
 
@@ -379,7 +379,7 @@ sections:
           due to my last primary phone (Nexus 6P) suddenly dying, and I needed to have an Android phone immediately for a class project.
 
           I would definitely wait for the next generation if I could. It was pretty sad to see the phone you bought dropped in price in just a month.
-        photo: /images/pixel2xl.jpg
+        photo: images/pixel2xl.jpg
         hidden: true
         links:
           - title: GSMArena
@@ -400,7 +400,7 @@ sections:
           and I need an Android phone immediately for my class project.
 
           There might be another phone between the Nexus 6P and the Milestone, but I can’t remember.
-        photo: /images/nexus6p.webp
+        photo: images/nexus6p.webp
         hidden: true
         links:
           - title: GSMArena
@@ -422,7 +422,7 @@ sections:
 
           Surprisingly the phone has lasted much longer than expected. It was mostly usable throughout the time with its battery replaced twice.
           I replaced it with a Nexus 6P when its performance started to fall behind.
-        photo: /images/galaxynote3.png
+        photo: images/galaxynote3.png
         hidden: true
         links:
           - title: GSMArena
@@ -437,7 +437,7 @@ sections:
           My first smartphone, also my first and last phone that had a physical QWERTY keyboard.
 
           It was too far ago for me to remember where it ended up with.
-        photo: /images/milestone.jpg
+        photo: images/milestone.jpg
         hidden: true
         links:
           - title: GSMArena
@@ -458,7 +458,7 @@ sections:
           mainly because Pixel Watch 2 only has a 41mm option, and I feel like it’s too small.
 
           I wrote [Simple Memo](https://1a23.com/works/open-source/simple-memo/) for Android Wear OS.
-        photo: /images/pixelwatch3.png
+        photo: images/pixelwatch3.png
         links:
           - title: GSMArena
             url: https://www.gsmarena.com/google_pixel_watch_3-13253.php
@@ -475,7 +475,7 @@ sections:
         description: |
           Bought this watch using the remaining wellbeing budgets that will expire if I don’t use it.
         hidden: true
-        photo: /images/pixelwatch2.jpg
+        photo: images/pixelwatch2.jpg
         links:
           - title: GSMArena
             url: https://www.gsmarena.com/google_pixel_watch_2-12547.php
@@ -491,7 +491,7 @@ sections:
           A nice watch in general, solid battery life. Returned due to bad connectivity with smartphone.
 
           I wrote [Fitbit Schedule](https://github.com/blueset/fitbit-schedule) for Fitbit OS 2.
-        photo: /images/fitbitversa.webp
+        photo: images/fitbitversa.webp
         hidden: true
         metadata:
           - key: Status
@@ -503,7 +503,7 @@ sections:
           This was also purchased when I graduated to with GST return.
 
           I should have traded it in before it was too late.
-        photo: /images/galaxywatch.jpg
+        photo: images/galaxywatch.jpg
         hidden: true
         links:
           - title: Wikipedia
@@ -522,7 +522,7 @@ sections:
           A next fitness tracker that replaced my lost Mi Band 2. It felt more like a smart watch
           than a fitness tracker, despite no app support. Unfortunately, there was no CJK support in
           music control and notifications in the global edition.
-        photo: /images/vivoactive3.jpg
+        photo: images/vivoactive3.jpg
         hidden: true
         links:
           - title: Garmin
@@ -538,7 +538,7 @@ sections:
         description: |
           My first fitness tracker. Feature was okay for a fitness tracker, but the strap
           was not very secure. It was lost unknowingly.
-        photo: /images/miband2.jpg
+        photo: images/miband2.jpg
         hidden: true
         metadata:
           - key: Status
@@ -546,7 +546,7 @@ sections:
       - title: Pixel Buds Pro 2
         description: |
           My primary earbuds, bought for the wireless charging upgrade, and loved with it for its active noise cancellation.
-        photo: /images/pixelbudspro2.png
+        photo: images/pixelbudspro2.png
         links:
           - title: Google
             url: https://store.google.com/product/pixel_buds_pro_2
@@ -558,7 +558,7 @@ sections:
       - title: Pixel Buds A-Series
         description: |
           Got this for free with my Pixel 6 Pro pre-order. It fits my ear well and hardly falls out when I move around.
-        photo: /images/pixelbudsaseries.png
+        photo: images/pixelbudsaseries.png
         hidden: true
         metadata:
           - key: Color
@@ -577,7 +577,7 @@ sections:
           An e-ink dashboard refreshes every 15 minutes (or longer), renders contents from TRMNL’s own servers.
 
           I wrote [some custom “recipes”](https://github.com/blueset/trmnl-recipes) to show all kinds of random stuff.
-        photo: /images/trmnlog.jpg
+        photo: images/trmnlog.jpg
         links:
           - title: TRMNL
             url: https://shop.usetrmnl.com/products/trmnl
@@ -596,7 +596,7 @@ sections:
           This is also my digitizer every time I need to draw something digitally.
 
           Missed the chance to jailbreak, now waiting for a new jailbreak for my current iPadOS version.
-        photo: /images/ipadpro12.93g.jpg
+        photo: images/ipadpro12.93g.jpg
         links:
           - title: GSMArena
             url: https://www.gsmarena.com/apple_ipad_pro_12_9_(2018)-9387.php
@@ -613,7 +613,7 @@ sections:
         description: |
           Something I bought just for the popularity. I ended up using it as a backup for my infrared remote and NFC entry stuff.
           
-        photo: /images/flipperzero.png
+        photo: images/flipperzero.png
         links:
           - title: Flipper Zero
             url: https://flipperzero.one/
@@ -623,7 +623,7 @@ sections:
       - title: Raspberry Pi 5
         description: |
           My current home server. Replaced my old Raspberry Pi 3 Model B+. It is now running a few light weight servers and controlled by a smart power plug.
-        photo: /images/raspberrypi5.webp
+        photo: images/raspberrypi5.webp
         links:
           - title: Raspberry Pi
             url: https://www.raspberrypi.com/products/raspberry-pi-5/
@@ -635,7 +635,7 @@ sections:
       - title: Google Home Mini (1st generation)
         description: |
           I got this for free from a Spotify promotion. Now it’s sitting on my desk answering basic questions about weather and setting timers.
-        photo: /images/googlehomemini.webp
+        photo: images/googlehomemini.webp
         metadata:
           - key: Color
             value: Charcoal
@@ -645,7 +645,7 @@ sections:
         description: |
           Bought for home server use. Failed suddenly one day and refused to boot thereafter.
           It is now recycled and replaced by a new Raspberry Pi.
-        photo: /images/raspberrypi3b.jpg
+        photo: images/raspberrypi3b.jpg
         hidden: true
         links:
           - title: Raspberry Pi
@@ -678,12 +678,20 @@ sections:
           A workout tracker. Supports custom workouts and cloud backup with Google Drive, Dropbox, and OneDrive.
 
           I built [GymRun poster](https://github.com/blueset/gymrun) that sends a Mastodon/Misskey post when it sees a new backup on OneDrive.
-        logo: /images/gymrun.png
+        logo: images/gymrun.png
         links:
           - title: Website
             url: https://www.gymrun.app/
           - title: Google Play
             url: https://play.google.com/store/apps/details?id=com.imperon.android.gymapp
+      - title: Shadow Weather
+        description: A weather app that aggregates data from multiple sources and provides hyperlocal forecasts.
+        logo: images/shadowweather.jpg
+        links:
+          - title: Website
+            url: https://shadowweather.com/
+          - title: Google Play
+            url: https://play.google.com/store/apps/details?id=com.noaimgames.shadowweather
 
   - title: Productivity
     color: text-emerald-600 dark:text-emerald-400
@@ -716,7 +724,7 @@ sections:
       - title: OneNote
         description: |
           For work-related note-taking. Its notebook-section-page structure is quite useful for organizing notes. Also, our company is all in Microsoft 365. 
-        logo: /images/microsoft-onenote-icon.svg
+        logo: images/microsoft-onenote-icon.svg
         links:
           - title: Website
             url: https://www.onenote.com/
@@ -724,7 +732,7 @@ sections:
             url: https://en.wikipedia.org/wiki/Microsoft_OneNote
       - title: Microsoft Loop
         description: For work-related collaborations. Mainly with Loop components embedded in Outlook emails and Teams messages.
-        logo: /images/microsoft-loop-logo.svg
+        logo: images/microsoft-loop-logo.svg
         links:
           - title: Website
             url: https://loop.microsoft.com/
@@ -732,7 +740,7 @@ sections:
             url: https://en.wikipedia.org/wiki/Microsoft_Loop
       - title: Microsoft To Do
         description: For work-related task management. Usually used interchangably with OneNote checklists.
-        logo: /images/microsoft-to-do-icon.svg
+        logo: images/microsoft-to-do-icon.svg
         links:
           - title: Website
             url: https://to-do.microsoft.com/
@@ -740,7 +748,7 @@ sections:
             url: https://en.wikipedia.org/wiki/Microsoft_To_Do
       - title: Microsoft 365
         description: It’s what my company uses. Simple as that.
-        logo: /images/microsoft-365-2022.svg
+        logo: images/microsoft-365-2022.svg
         links:
           - title: Website
             url: https://www.microsoft.com/microsoft-365

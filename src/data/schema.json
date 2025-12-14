@@ -44,7 +44,7 @@
         "ImagePath": {
             "type": "string",
             "description": "Path to an image in the public folder (e.g., '/images/foo.svg' or '/images/foo.png').",
-            "pattern": "^/.*"
+            "pattern": "^.*"
         },
         "Link": {
             "type": "object",

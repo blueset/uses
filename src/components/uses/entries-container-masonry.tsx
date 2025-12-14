@@ -48,11 +48,11 @@ export function EntriesContainerMasonry({
   // Decide media type and aspect ratio for each tile.
   const aspectRatios = useMemo(() => {
     return orderedEntries.map((e) => {
-      if (e.photoMetadata?.width && e.photoMetadata?.height) {
-        return e.photoMetadata.width / e.photoMetadata.height;
+      if (e.photo?.width && e.photo?.height) {
+        return e.photo.width / e.photo.height;
       }
-      if (e.logoMetadata?.width && e.logoMetadata?.height) {
-        return e.logoMetadata.width / e.logoMetadata.height;
+      if (e.logo?.width && e.logo?.height) {
+        return e.logo.width / e.logo.height;
       }
       // Icons or unknown sizes default to square
       return 1;

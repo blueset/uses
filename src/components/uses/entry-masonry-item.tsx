@@ -29,19 +29,21 @@ export function EntryMasonryItem({
       <div className="top-0 right-0 bottom-9 left-0 absolute bg-muted dark:bg-muted/50 group-hover:opacity-70 rounded-md transition-opacity">
         {entry.photo ? (
           <Image
-            src={`.${entry.photo}`}
+            src={entry.photo.src}
             alt={entry.title}
-            width={entry.photoMetadata?.width}
-            height={entry.photoMetadata?.height}
+            width={entry.photo.width}
+            height={entry.photo.height}
+            blurDataURL={entry.photo.blurDataURL}
             className="bg-white rounded-md w-full h-full object-contain"
           />
         ) : entry.logo ? (
           <div className="flex justify-center items-center bg-muted dark:bg-muted/50 p-8 w-full h-full">
             <Image
-              src={`./${entry.logo}`}
+              src={entry.logo.src}
               alt={entry.title}
-              width={entry.logoMetadata?.width}
-              height={entry.logoMetadata?.height}
+              width={entry.logo.width}
+              height={entry.logo.height}
+              blurDataURL={entry.logo.blurDataURL}
               className="rounded-md w-full h-full object-contain"
             />
           </div>

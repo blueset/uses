@@ -2,8 +2,6 @@ import { UsesConfig } from "@/types/uses";
 import { UsesSection } from "./uses-section";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { ServerMDX } from "@/components/server-mdx";
-import path from "path";
-import { imageSizeFromFile } from "image-size/fromFile";
 import { Logo } from "./logo";
 import { Button } from "../ui/button";
 
@@ -17,29 +15,11 @@ export async function UsesPage({ config }: UsesPageProps) {
     config.sections.map(async (section) => {
       const enrichedEntries = await Promise.all(
         section.entries.map(async (entry) => {
-          // Compute image metadata using absolute file paths; swallow errors if files are missing.
-          const getSize = async (rel?: string) => {
-            if (!rel) return undefined;
-            try {
-              const abs = path.join(
-                process.cwd(),
-                "public",
-                rel.replace(/^\//, "")
-              );
-              return await imageSizeFromFile(abs);
-            } catch {
-              return undefined;
-            }
-          };
-
-          const photoMetadata = await getSize(entry.photo);
-          const logoMetadata = await getSize(entry.logo);
-
           // MDX pre-rendering (optional if description is present)
           const hasDesc = !!entry.description;
           const cardDescription = hasDesc
             ? section.defaultLayout === "grid"
-              ? entry.description!.split("\n\n")[0]
+              ? entry.descriptionSummary!
               : entry.description!
             : undefined;
 
@@ -49,8 +29,6 @@ export async function UsesPage({ config }: UsesPageProps) {
               cardDescriptionJSX: <ServerMDX source={cardDescription!} />,
               fullDescriptionJSX: <ServerMDX source={entry.description!} />,
             }),
-            ...(photoMetadata && { photoMetadata }),
-            ...(logoMetadata && { logoMetadata }),
           };
         })
       );
@@ -64,7 +42,7 @@ export async function UsesPage({ config }: UsesPageProps) {
   return (
     <div className="bg-background min-h-screen text-foreground">
       {/* Header */}
-      <header className="bg-background/95 supports-[backdrop-filter]:bg-background/80 backdrop-blur border-b border-border">
+      <header className="bg-background/95 supports-[backdrop-filter]:bg-background/80 backdrop-blur border-border border-b">
         <div className="mx-auto px-4 max-w-6xl">
           {/* Top nav row: logo + theme toggle */}
           <div className="flex justify-between items-center py-12">

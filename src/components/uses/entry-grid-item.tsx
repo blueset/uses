@@ -16,10 +16,11 @@ export function EntryGridItem({ entry, sectionIcon, onClick, descriptionJSX }: E
     if (entry.photo) {
       return (
         <Image
-          src={`./${entry.photo}`}
+          src={entry.photo.src}
           alt={entry.title}
           width={300}
           height={300}
+          blurDataURL={entry.photo.blurDataURL}
           className="bg-muted dark:bg-muted/50 p-2 w-full object-contain aspect-square"
         />
       );
@@ -29,10 +30,11 @@ export function EntryGridItem({ entry, sectionIcon, onClick, descriptionJSX }: E
       return (
         <div className="flex justify-center items-center bg-muted dark:bg-muted/50 group-hover:bg-muted/40 group-hover:dark:bg-muted/30 p-4 w-full aspect-square transition-colors">
           <Image
-            src={`./${entry.logo}`}
+            src={entry.logo.src}
             alt={entry.title}
-            width={entry.logoMetadata?.width}
-            height={entry.logoMetadata?.height}
+            width={entry.logo.width}
+            height={entry.logo.height}
+            blurDataURL={entry.logo.blurDataURL}
             className="max-w-full max-h-12 object-contain"
           />
         </div>

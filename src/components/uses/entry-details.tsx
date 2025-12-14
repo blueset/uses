@@ -45,8 +45,8 @@ export function EntryDetails({
 
   const hasAnyMedia = entry.photo || entry.logo || entry.icon;
   // Landscape: prefer measured result, fall back to photo presence
-  const photoW = entry.photoMetadata?.width;
-  const photoH = entry.photoMetadata?.height;
+  const photoW = entry.photo?.width;
+  const photoH = entry.photo?.height;
   const metaLandscape = photoW && photoH ? photoW > photoH : undefined;
   const isLandscape =
     metaLandscape ?? !!(entry.photo);
@@ -55,10 +55,11 @@ export function EntryDetails({
     if (entry.photo) {
       return (
         <Image
-          src={`.${entry.photo}`}
+          src={entry.photo.src}
           alt={entry.title}
-          width={entry.photoMetadata?.width}
-          height={entry.photoMetadata?.height}
+          width={entry.photo.width}
+          height={entry.photo.height}
+          blurDataURL={entry.photo.blurDataURL}
           className={cn(
             "rounded-xl w-full h-auto",
             isLandscape ? "object-cover" : "object-contain"
@@ -71,10 +72,11 @@ export function EntryDetails({
       return (
         <div className="flex justify-center items-center bg-muted/50 p-6 rounded-xl w-full max-w-60 h-auto object-contain aspect-square">
           <Image
-            src={`./${entry.logo}`}
+            src={entry.logo.src}
             alt={entry.title}
-            width={entry.logoMetadata?.width}
-            height={entry.logoMetadata?.height}
+            width={entry.logo.width}
+            height={entry.logo.height}
+            blurDataURL={entry.logo.blurDataURL}
             className="w-auto max-h-24"
         />
         </div>

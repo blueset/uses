@@ -1,5 +1,8 @@
 import type { ISizeCalculationResult } from "image-size/types/interface";
 import type { ReactNode } from "react";
+import { data } from "../../.velite"
+
+export type UsesConfig = typeof data;
 
 export interface UsesLink {
   title: string;
@@ -11,11 +14,21 @@ export interface UsesMetadata {
   value: string;
 }
 
+export interface ImageMetadata {
+  src: string;
+  width: number;
+  height: number;
+  blurDataURL: string;
+  blurWidth: number;
+  blurHeight: number;
+}
+
 export interface UsesEntry {
   title: string;
   description?: string;
-  photo?: string;
-  logo?: string;
+  descriptionSummary?: string;
+  photo?: ImageMetadata;
+  logo?: ImageMetadata;
   icon?: string;
   links?: UsesLink[];
   hidden?: boolean;
@@ -24,10 +37,6 @@ export interface UsesEntry {
   cardDescriptionJSX?: ReactNode;
   // Pre-rendered on the server: full description for details view
   fullDescriptionJSX?: ReactNode;
-  // Pre-rendered on the server: photo metadata
-  photoMetadata?: ISizeCalculationResult;
-  // Pre-rendered on the server: logo metadata
-  logoMetadata?: ISizeCalculationResult;
 }
 
 export interface UsesSection {
@@ -39,9 +48,10 @@ export interface UsesSection {
   entries: UsesEntry[];
 }
 
-export interface UsesConfig {
-  sections: UsesSection[];
-}
+// export interface UsesConfig extends UsesData {
+//   // sections: UsesSection[];
+  
+// }
 
 export interface MDXComponentProps {
   children: ReactNode;
