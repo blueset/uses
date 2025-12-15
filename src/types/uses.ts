@@ -1,8 +1,7 @@
-import type { ISizeCalculationResult } from "image-size/types/interface";
 import type { ReactNode } from "react";
-import { data } from "../../.velite"
+import type { Data } from "@velite"
 
-export type UsesConfig = typeof data;
+export type UsesConfig = Data;
 
 export interface UsesLink {
   title: string;
@@ -47,11 +46,6 @@ export interface UsesSection {
   defaultLayout: "grid" | "list" | "masonry";
   entries: UsesEntry[];
 }
-
-// export interface UsesConfig extends UsesData {
-//   // sections: UsesSection[];
-  
-// }
 
 export interface MDXComponentProps {
   children: ReactNode;

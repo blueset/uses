@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import yaml from "js-yaml";
 import { UsesConfig } from "@/types/uses";
-import { data } from "../../.velite";
+import { data } from "@velite";
 
 export function loadUsesConfig() {
   return data;

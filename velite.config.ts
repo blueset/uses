@@ -100,8 +100,6 @@ export default defineConfig({
           sections: s.array(sectionSchema),
         })
         .strict(),
-      // more additional fields (computed fields)
-      // .transform(data => ({ ...data, permalink: `/blog/${data.slug}` }))
     },
   },
 });

@@ -20,7 +20,6 @@
     "@types/mdx": "^2.0.13",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "image-size": "^2.0.2",
     "js-yaml": "^4.1.0",
     "justified-layout": "^3.0.0",
     "lucide-react": "^0.541.0",
